@@ -29,6 +29,9 @@ h6 {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 .visually-hidden {
@@ -155,11 +158,13 @@ img {
 /* 1 section hero */
 
 .section-hero {
-  max-width: 1440px;
+  /* max-width: 1440px; */
   margin: 0 auto;
   background: #2e2f42;
-  padding-bottom: 188px;
-  padding-top: 188px;
+  /* padding-bottom: 188px;
+  padding-top: 188px; */
+  padding-bottom: 72px;
+  padding-top: 72px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -170,21 +175,25 @@ img {
   background-size: cover;
 }
 
-.container-hero {
+/* .container-hero {
   padding: 188px 331px;
-}
+} */
 
 .section-hero-title {
   color: #ffffff;
   text-align: center;
-  font-size: 56px;
-  line-height: 1.07;
+  /* font-size: 56px;
+  line-height: 1.07; */
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   font-weight: 700;
-  max-width: 496px;
-  margin-bottom: 48px;
+  max-width: 160px;
+  /* margin-bottom: 48px; */
+  margin-bottom: 72px;
   margin-left: auto;
   margin-right: auto;
+  text-transform: capitalize;
 }
 
 .button {
@@ -286,7 +295,7 @@ img {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  }
+}
 
 .team-text-container {
   padding-top: 32px;
@@ -454,8 +463,10 @@ img {
 
 .footer {
   background: #2e2f42;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  /* padding-top: 100px;
+ padding-bottom: 100px; */
+  padding-top: 98px;
+  padding-bottom: 96px;
 }
 
 .logo-studio-white {
@@ -464,7 +475,8 @@ img {
 
 .foter-logo {
   display: inline-block;
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
+  margin-bottom: 18px;
 }
 .footer-text {
   font-size: 16px;
@@ -472,15 +484,18 @@ img {
   color: #f4f4fd;
   letter-spacing: 0.02em;
   max-width: 264px;
+  margin-bottom: 72px;
 }
 
 .footer-soc-title {
   color: #ffffff;
   font-size: 16px;
-  font-weight: 500;
+  /* font-weight: 500; */
+  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .footer-soc-list {
@@ -519,14 +534,15 @@ img {
 .container-flex {
   display: flex;
   align-items: baseline;
+  flex-wrap: wrap;
 }
 
-.footer-left0section {
-  margin-right: 120px;
+.footer-left-section {
+  /* margin-right: 120px; */
 }
 
 .fotter-soc-wrap {
-  margin-right: 80px;
+  /* margin-right: 80px; */
 }
 
 .footer-input {
@@ -543,7 +559,7 @@ img {
   padding-left: 16px;
 }
 
-.footer-form {
+.footer-form-right {
 }
 
 .footer-input::placeholder {
@@ -557,6 +573,8 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
+  margin-top: 72px;
+  text-align: center;
 }
 
 .fotter-btn-subscribe {
@@ -578,9 +596,10 @@ img {
   border: none;
 }
 
-.foter-form {
+.footer-form {
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
 }
 
 .foter-form-svg {
@@ -827,15 +846,29 @@ img {
     text-align: start;
   }
 
+  .section-our-team > .container {
+    max-width: 584px;
+  }
+
   .team-list {
     gap: 64px 24px;
-    justify-content: center;
   }
-.portfolio-list {
-  gap: 72px 24px;
-}
+  .portfolio-list {
+    gap: 72px 24px;
+  }
   .portfolio-item {
-  width: calc((100% - 24px) / 2);
+    width: calc((100% - 24px) / 2);
+  }
+  .section-hero {
+    padding-bottom: 112px;
+    padding-top: 112px;
+  }
+  .section-hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 36px;
+    max-width: 496px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -843,6 +876,9 @@ img {
     max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .section-our-team > .container {
+    max-width: 1158px;
   }
   .advantages-item {
     width: calc((100% - 72px) / 4);
@@ -876,9 +912,18 @@ img {
     width: calc((100% - 72px) / 4);
   }
   .portfolio-list {
-  gap: 48px 24px;
-}
+    gap: 48px 24px;
+  }
   .portfolio-item {
-  width: calc((100% - 48px) / 3);
-}
+    width: calc((100% - 48px) / 3);
+  }
+
+  .section-hero {
+    padding-bottom: 188px;
+    padding-top: 188px;
+    max-width: 1440px;
+  }
+  .section-hero-title {
+    margin-bottom: 48px;
+  }
 }
