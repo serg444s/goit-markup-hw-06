@@ -121,23 +121,27 @@ img {
 }
 
 .heder-navigation {
-  display: flex;
-  gap: 40px;
+  display: none;
+  /* display: flex;
+  gap: 40px; */
 }
 
 .heder-adress {
-  display: flex;
-  gap: 40px;
+  /* display: flex;
+  gap: 40px; */
+  display: none;
 }
 
 .heder-wrap {
   display: flex;
   align-items: center;
+  margin-top: 18px;
+  margin-bottom: 18px;
 }
 
 .heder-all {
   display: flex;
-  gap: 332px;
+  /* gap: 332px; */
 }
 
 .current {
@@ -153,6 +157,18 @@ img {
   width: 100%;
   background-color: #404bbf;
   border-radius: 2px;
+}
+
+.bth-header {
+  display: block;
+  margin-left: auto;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.btn-header-svg {
+  fill: #2f2f37;
 }
 
 /* 1 section hero */
@@ -337,8 +353,9 @@ img {
 
 .team-list {
   display: flex;
-  gap: 72px;
+  gap: 72px 24px;
   flex-wrap: wrap;
+  justify-content: center;
   /* gap: 24px; */
 }
 
@@ -503,7 +520,7 @@ img {
 .footer-soc-title {
   color: #ffffff;
   font-size: 16px;
-  /* font-weight: 500; */
+  font-weight: 500;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -586,8 +603,8 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
-  /* margin-top: 72px; */
-  /* text-align: center; */
+  margin-top: 72px;
+  text-align: center;
 }
 
 .fotter-btn-subscribe {
@@ -925,6 +942,14 @@ img {
     flex-direction: row;
     justify-content: start;
   }
+
+  .foter-modal-text {
+    text-align: start;
+  }
+
+  .footer-soc-title {
+    text-align: start;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -1008,7 +1033,9 @@ img {
     max-width: 1158px;
   }
   .container-flex {
+    flex-direction: row;
     flex-wrap: nowrap;
+    align-items: baseline;
   }
   .footer {
     padding-top: 100px;
@@ -1019,12 +1046,17 @@ img {
   }
   .footer-soc-title {
     font-weight: 500;
+    text-align: start;
   }
   .footer-left-section {
     margin-right: 120px;
   }
   .fotter-soc-wrap {
     margin-right: 80px;
+  }
+
+  .footer-text {
+    max-width: 264px;
   }
   .foter-modal-text {
   }
